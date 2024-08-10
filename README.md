@@ -36,3 +36,12 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # NextJs-app
 NextJs-Reactjs
+
+
+
+# 两种component
+###### Server component (所有的component都默认)
+###### Client component (需要主动声明。 需要与用户交互才用)
+
+- 数据获取相关。与后端资源都一些交互。一些敏感信息 (token,APIkey)。一些大的依赖。Server component
+- 需要用户交互的部分(onClick onChange )。涉及到 state,Lifecycle,Effects的 。 用到浏览器API的。涉及到ReactClass Client component
